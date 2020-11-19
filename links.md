@@ -7,3 +7,4 @@
 7. https://github.com/ayush96agrawal/Automatic-Time-Table-Generator
 8. https://github.com/forkarea/book
 9. https://www.w3resource.com/php-exercises/challenges/1/index.php
+10. https://www.geeksforgeeks.org/php-palindrome-check/?ref=lbp
