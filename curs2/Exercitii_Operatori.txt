@@ -186,3 +186,12 @@ var_dump($a + $b);
 
 24. Ce v-a afisa urmatorul code PHP?
 var_dump(123 == "123abc");
+
+25. Ce v-a afisa urmatorul code PHP?
+$a = 1;//0001 in baza 2
+$b = 3;//0011 in baza 2
+echo $a & $b;
+echo '<br>';
+echo $a | $b;
+echo '<br>';
+echo $a ^ $b;
