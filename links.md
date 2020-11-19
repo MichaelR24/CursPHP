@@ -1,0 +1,10 @@
+1. http://staff.cs.upt.ro/~chirila/teaching/upt/mpt11-upc/curs/upc12.pdf
+2. https://pseudocod1.weebly.com/exercitii.html
+3. https://github.com/forkarea/book
+4. https://download.code-projects.org/details/07fc5d88-edae-45a1-b96e-43da086d9826 
+5. https://github.com/iamareebjamal/car-rental-php 
+6. https://download.code-projects.org/details/ca1f3de2-bbe1-4b04-9182-00170c6ca886 
+7. https://github.com/ayush96agrawal/Automatic-Time-Table-Generator
+8. https://github.com/forkarea/book
+9. https://www.w3resource.com/php-exercises/challenges/1/index.php
+10. https://www.geeksforgeeks.org/php-palindrome-check/?ref=lbp
