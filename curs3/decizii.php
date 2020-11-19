@@ -320,5 +320,16 @@ Date de intrare:
 Date de iesire
 15
 31
+
+21.
+Ce va afisa urmatorul script?
+<?php
+if (true == 1){
+    echo "Adevarul este relativ!";
+}
+if (0 == 'true'){
+    echo "Minciuna are picioare scurte!";
+}
+?>
 </body>
 </html>
