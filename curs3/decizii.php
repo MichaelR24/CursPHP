@@ -331,5 +331,28 @@ if (0 == 'true'){
     echo "Minciuna are picioare scurte!";
 }
 ?>
+22. Ce va afisa urmatorul script?
+<?php
+$n = 1; //dar daca $n ='abc';
+switch ($n) {
+    case 0:
+        echo "numarul este 0 ";
+    case 1:
+        echo "numarul este 1 ";
+    case 2:
+        echo "numarul este 2 ";
+    }
+?>
+23. Ce va afisa urmatorul script?
+<?php
+$index = 1;
+for (;;) {
+    if($index > 10) {
+        break;
+ }
+ echo "$index \n";
+ $index++;
+}
+?>
 </body>
 </html>
