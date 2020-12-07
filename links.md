@@ -8,3 +8,4 @@
 8. https://github.com/forkarea/book
 9. https://www.w3resource.com/php-exercises/challenges/1/index.php
 10. https://www.geeksforgeeks.org/php-palindrome-check/?ref=lbp
+11. http://www.cs.ubbcluj.ro/~vcioban/Geografie/Laborator1.pdf
