@@ -28,8 +28,14 @@
 10. https://phpapprentice.com/
 11. https://www.learn-php.org/
 12. https://www.sololearn.com/learning/1059
+13. https://algoflow.ro/
+14. https://repl.it/
+15. https://beyondco.de/
 
 - https://download.code-projects.org/details/07fc5d88-edae-45a1-b96e-43da086d9826 
 - https://github.com/iamareebjamal/car-rental-php 
 - https://download.code-projects.org/details/ca1f3de2-bbe1-4b04-9182-00170c6ca886 
 - https://github.com/ayush96agrawal/Automatic-Time-Table-Generator
+
+- https://github.com/payloadbox/xss-payload-list
+- https://owasp.org/www-project-top-ten/
