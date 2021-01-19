@@ -6,11 +6,31 @@
     "configurations": [
         
         {
+<<<<<<< HEAD
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
+=======
+            "name": "Listen for XDebug",
+            "type": "php",
+            "request": "launch",
+            "pathMappings": {
+                "/var/www/html": "${workspaceFolder}/htdocs/"
+            },
+
+            "port": 9000,
+           // "log": true
+        },
+        {
+            "name": "Launch currently open script",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 9000
+>>>>>>> 925bef5b22500aa070e49d7501f6f3953725efe5
         }
     ]
 }

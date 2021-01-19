@@ -1,7 +1,7 @@
 <?php
 // echo "Sunt in fisierul post.php";
-// echo "<pre>";
-// print_r ($_POST);
+//  echo "<pre>";
+//  print_r ($_POST); die;
 // print_r($_FILES);
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -11,7 +11,7 @@ if (session_status() == PHP_SESSION_NONE) {
 //https://www.w3schools.com/php/php_file_upload.asp
 //https://code-boxx.com/simple-csrf-token-php/
 $cheie= $_SESSION['token'];
-if($cheie!==$_POST['hash'] ){
+if( !isset ($_POST['hash'] )  || $cheie !== $_POST['hash']  ){
     echo 'Eroare CSRF';die;
 }
 include_once("connect.php");
