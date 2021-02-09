@@ -1,3 +1,4 @@
+- https://www.php.net/manual/en/reserved.php
 - https://getcomposer.org/
 - https://www.php-fig.org/psr/
 - https://cs.symfony.com/
