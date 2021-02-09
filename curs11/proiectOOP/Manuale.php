@@ -18,3 +18,4 @@ class Manuale extends Carti{
     // putem sa resciem metoda pret pentru a aplica un procent de reducere pentru comanda mai mare
     
 }
+

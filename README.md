@@ -16,3 +16,9 @@ PHP OOP
 - https://www.guru99.com/php-interview-questions-answers.html
 - https://www.softwaretestinghelp.com/php-interview-questions/
 - http://learnthat.com/89-php-web-developer-interview-questions/
+
+
+
+--
+- https://letsfindcourse.com/technical-questions/php-questions-answers/php-class-mcq
+- https://letsfindcourse.com/technical-questions/php-questions-answers/php-object-mcq
