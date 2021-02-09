@@ -12,7 +12,11 @@
         <legend><strong>Formular de inregistrare</strong></legend>
         <label id="prenume-label" class="prenume">
             <strong>Prenume</strong><br>
+<<<<<<< HEAD
             <input type="text"  name="prenume" id="prenume" oninvalid="this.setCustomValidity('Acest camp este obligatoriu!')" required />
+=======
+            <input type="text" value="" name="prenume" id="prenume" oninvalid="this.setCustomValidity('Acest camp este obligatoriu!')" required />
+>>>>>>> master
         </label>
         <br>
         <label id="nume-label" class="nume">
@@ -30,7 +34,35 @@
             <input type="password" value="" name="parola" id="parola" required/>
         </label>
         <br>
+<<<<<<< HEAD
         
+=======
+        <label id="parola2-label" class="parola2">
+                <strong>Confirmati parola</strong><br>
+            <input type="password" value="" name="parola2" id="parola2" required/>
+        </label>
+        <br>
+        <label id="zinastere-label" class="zinastere">
+                <strong>Zi de nastere</strong><br>
+            <input type="date" value="" name="zinastere" id="zinastere" required/>
+        </label>
+        <br>
+        <label id="sex-label" class="sex">
+        <strong>Sex</strong><br>
+            <select name="sex" id="sex" required>
+                <option value="m">Masculin</option>
+                <option value="f">Feminin</option>
+                <option value="n">Altul</option>
+                <option value="">Prefer sa nu spun </option>
+            </select>
+        </label>
+        <br>
+        <label id="telefon-label" class="telefon">
+                <strong>Telefon</strong><br>
+            <input type="tel" value="" name="telefon" id="telefon" pattern="0[0-9]{9}" maxlength="10" required/>
+        </label>
+        <br><br>
+>>>>>>> master
         <label  class="submit">
             <input type="submit" value="Trimite" name="submit"/>
         </label>
