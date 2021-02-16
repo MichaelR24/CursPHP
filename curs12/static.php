@@ -1,28 +1,29 @@
 <?php
 //Q. Looking at the code below, what will the script return?
-function numara_0() { 
-    $i = 0; 
-    echo $i++; 
-}
-numara_0(); 
-numara_0(); 
-numara_0(); 
-numara_0(); 
+// $i = 0;
+// function numara_0() { 
+//      global $i;
+//     echo $i++; 
+// }
+// numara_0(); 
+// numara_0(); 
+// numara_0(); 
+// numara_0(); 
 
 //Q. Looking at the code below, what will the script return?
-function numara_1() { 
-    static $i = 0; 
-    echo $i++; 
-}
-numara_1(); 
-numara_1(); 
-numara_1(); 
-numara_1(); 
+// function numara_1() { 
+//     static $i = 0; 
+//     echo $i++; 
+// }
+// numara_1(); 
+// numara_1(); 
+// numara_1(); 
+// numara_1(); 
 
 
 
 
-// //Q. Looking at the code below, what will the script return?
+//Q. Looking at the code below, what will the script return?
 // class Test { 
 //     private $nota = 1; 
 //     function punctaj() { 
@@ -38,30 +39,30 @@ numara_1();
 //   $f();
 
 
-// //Q. Looking at the code below, what will the script return?
+//Q. Looking at the code below, what will the script return?
 // class Template
 // {
-//     protected $template_name;
+//     protected  static $template_name;
 
 //     public function __construct() {
-//    	  $this->template_name = 'innovation_card';
+//         self::$template_name = 'innovation_card';
 //     }
 
 // 	public static function getTemplateName() {
-//       return $this->template_name;
+//       return self::$template_name;
 // 	}
 // }
 // $b = new Template;
-// Template::getTemplateName();
+// echo Template::getTemplateName();
 
 
 
 
-// //Q. Looking at the code below, what will the script return?
+//Q. Looking at the code below, what will the script return?
 
 // class Demo { 
-//     private $total = 0; 
-//     private $count = 0; 
+//     private static $total = 0; 
+//     private static $count = 0; 
      
 //     // getter for current count 
 //     public static function getCount() { 
@@ -78,34 +79,38 @@ numara_1();
 //    } 
 // }
 // $obj = NEW Demo;
-// echo $obj->getCount();
+// $obj2 = NEW Demo;
+// //$obj->getCount();
+// echo $obj2::getCount();
+// //echo Demo::getCount();
+
 
 
  //Q. Looking at the code below, what will the script return?
  //  Late static binding     
-class Car 
-{ 
-    public static $name = 'Tesla'; 
-    public static function getCar() 
-    { 
-        return "The car name is : " . self::$name; 
-    } 
-    public static function getOwner() 
-    { 
-        echo static::getCar(); 
-    } 
-} 
-class newCar extends Car 
-{ 
+// class Car 
+// { 
+//     public static $name = 'Tesla'; 
+//     public static function getCar() 
+//     { 
+//         return "The car name is : " . self::$name; 
+//     } 
+//     public static function getOwner() 
+//     { 
+//         echo static::getCar(); 
+//     } 
+// } 
+// class newCar extends Car 
+// { 
   
-    public static function getCar() 
-    { 
+//     public static function getCar() 
+//     { 
   
-        return "The car name is : " . self::$name .  
-                        " and owner is Anshu."; 
-    } 
+//         return "The car name is : " . self::$name .  
+//                         " and owner is Anshu."; 
+//     } 
   
-} 
-Car::getOwner(); 
-echo "\n"; 
-newCar::getOwner(); 
+// } 
+// Car::getOwner(); 
+// echo "\n"; 
+// newCar::getOwner(); 

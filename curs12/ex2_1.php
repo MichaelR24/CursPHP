@@ -24,7 +24,7 @@ class Bunic
 
 class Parinte extends Bunic
 {
-    protected $codulPin;
+    protected $codulPin='1234';
     public $casa = 'Casa Bunicului am mostenit-o si o fac muzeu devine publica!';
 
     protected function getCodulPin()
@@ -54,19 +54,20 @@ class Copil extends Parinte
     public function call()
     {
         //pot sa decit ce sa accesez
-        //echo self::afiseazaCasa(); // self
-        //echo parent::afiseazaCasa(); // parinte
-        echo Bunic::afiseazaCasa(); // bunic
+        echo self::afiseazaCasa(); // self
+        //echo Parinte::afiseazaCasa(); // parinte
+       // echo Bunic::afiseazaCasa(); // bunic
     }
+    
 }
 $Gigel = new Copil();
 //var_dump($Gigel);
-//$Gigel->afiseazaNume();
+
 $Gigel->call();
 //Gigel sa acceseze pensia
 //Gigel sa schimbe codulPim
 //Gigel nu pote savanda direct casa bunicului ci doar cu acordul parintelui
-echo $Gigel->casa;
+//echo $Gigel->casa;
 
-$Ion = new Parinte2();
-var_dump($Ion);
+////$Ion = new Parinte2();
+//var_dump($Ion);

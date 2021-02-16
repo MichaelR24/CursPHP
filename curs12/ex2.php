@@ -14,8 +14,8 @@ class A {
 
 // --
 
-$a = new A();
-var_dump($a);
+//$a = new A();
+//var_dump($a);
 //echo $a->public; // Public
 //echo $a->protected; // Fatal error
 //echo $a->private; // Fatal error
@@ -39,11 +39,11 @@ class B extends A {
 
 // --
 
-$b = new B();
-var_dump($b);
-echo $b->public; // Public
-//echo $b->protected; // Fatal error
-//echo $b->private; // Fatal error
-$b->testVisibilityA(); // Public, Protected, Private
-$b->testVisibilityB(); // // Notice: Undefined, $this->private
-$b->testVisibilityB_correct(); // Public, Protected,
+ $b = new B();
+ var_dump($b);
+// echo $b->public; // Public
+// //echo $b->protected; // Fatal error
+// //echo $b->private; // Fatal error
+ $b->testVisibilityA(); // Public, Protected, Private
+ $b->testVisibilityB(); // // Notice: Undefined, $this->private
+// $b->testVisibilityB_correct(); // Public, Protected,

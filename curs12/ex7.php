@@ -5,28 +5,22 @@ class Masina
 {
     public static function model()
     {
-         self::getModel();
-        //static::getModel(); // late static bindings
-
+         //self::getModel();
+        static::getModel(); // late static bindings
     }
-
     protected static function getModel()
     {
         echo "Eu sunt o masina oarecare!";
     }
-
 }
 
 Masina::model();
-
 class Mercedes extends Masina
 {
-
     protected static function getModel()
     {
         echo "Eu sunt o masina model Mercedes!";
     }
 
 }
-
-Mercedes::model();
+ Mercedes::model();

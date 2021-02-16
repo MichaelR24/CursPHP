@@ -18,8 +18,7 @@ class User extends Person {
     // overriden method
     // in acest caz NU se mai apeleaza constructorul parinte
 	public function __construct($name, $age, $school) {
-		$this -> name = $name;
-		$this -> age = $age;
+		parent::__construct($name, $age);
 		$this -> school = $school;
     }
     public function introduce() {
