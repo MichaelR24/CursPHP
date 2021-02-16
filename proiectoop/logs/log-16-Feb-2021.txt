@@ -1,0 +1,2 @@
+[16-Feb-2021 14:16:45] [localhost/2021_cursphp/proiectoop/inregistrare.php] : [INFO] - Ip utilizator: ::1
+[16-Feb-2021 14:18:11] [localhost/2021_cursphp/proiectoop/inregistrare.php] : [INFO] - Ip utilizator: ::1
