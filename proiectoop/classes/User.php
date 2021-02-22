@@ -19,8 +19,8 @@ class USER
         $this->setParola($parola);
 
         $sql = "SELECT id FROM users WHERE email='$this->email' LIMIT 1";
-        $conn = Database::getConnection(); // se creeaza conexiunea la baza de date
-        $check = mysqli_query($conn, $sql);
+        $database = new Database(); // se creeaza conexiunea la baza de date
+        $check = mysqli_query($database->getConnection(), $sql);
         $count_row = mysqli_num_rows($check);
 
         //if the username is not in db then insert to the table

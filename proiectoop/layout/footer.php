@@ -17,7 +17,7 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright: MyName
+  <div class="footer-copyright text-center py-3">© 2021 Copyright: MyName
   </div>
   <!-- Copyright -->
 
