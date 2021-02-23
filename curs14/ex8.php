@@ -26,7 +26,13 @@ require_once 'autoload.php';
 use MyProject\OOP\MyApp as MyDemo;
 use MyProject\Test\MyApp;
 
-$app = new MyDemo();
+// try{
+    $app = new MyDemo();
+// }
+// catch (Exception $e) {
+//     echo $e->getMessage(). $e->getCode();die;
+// }
+
 $app->test();
 echo "<br>";
 $test = new MyApp();
