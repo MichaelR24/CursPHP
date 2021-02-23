@@ -1,5 +1,5 @@
 <?php
-namespace MyProject\OOP;
+namespace MyProject;
 
 class MyApp{
     public function test(){

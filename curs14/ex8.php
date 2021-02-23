@@ -1,5 +1,6 @@
 <?php
 //includem toate clasele de care avem nevoie
+//Use Composer to autoload your PHP Classes.
 require_once 'autoload.php';
 
  //metoda 1 - global
@@ -20,7 +21,7 @@ require_once 'autoload.php';
 //  $app->test();
 
 
-// folosim doua metode cu acelasi nume
+// folosim trei clase metode cu acelasi nume
 
 use MyProject\OOP\MyApp as MyDemo;
 use MyProject\Test\MyApp;
@@ -32,5 +33,5 @@ $test = new MyApp();
 $test->test();
 
 echo "<br>";
-$extern = new \ExternApp\MyApp();
+$extern = new \MyProject\MyApp();
 $extern->test();

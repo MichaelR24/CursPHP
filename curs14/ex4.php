@@ -1,5 +1,21 @@
 
 <?php
+//supraincarcarea functiilor
+function add()
+{
+    $sum = 0;
+    $args = func_get_args();
+    foreach ($args as $arg)
+    {
+       $sum += $arg;
+    }
+    return $sum;
+}
+echo add(1, 2); // '3'
+echo add(10.5, 2.5); // '13'
+echo add(10.5, 2.5, 9.6, 55.2); // '77.8'
+
+
 class SupraIncarcare
 {
     /**  supranacarcarea proprietatilor  */
