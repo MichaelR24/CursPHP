@@ -19,8 +19,9 @@ class USER
         $this->setParola($parola);
 
         $sql = "SELECT id FROM users WHERE email='$this->email' LIMIT 1";
-        $database = new Database(); // se creeaza conexiunea la baza de date
-        $check = mysqli_query($database->getConnection(), $sql);
+        $instance = Database::getInstance();
+        $conn = $instance->getConnection();
+        $check = mysqli_query($conn, $sql);
         $count_row = mysqli_num_rows($check);
 
         //if the username is not in db then insert to the table
@@ -30,7 +31,7 @@ class USER
             prenume='$this->prenume',
             email='$this->email',
             parola='$this->parola'";
-            $res = mysqli_query($database->getConnection(), $sql_ins);
+            $res = mysqli_query($conn, $sql_ins);
             if ($res) {
                 return true;
             } else {
@@ -46,8 +47,9 @@ class USER
 
         $sql = "SELECT * FROM users WHERE email = '" . $umail . "' LIMIT 1";
         //echo password_hash($upass, PASSWORD_DEFAULT);
-        $database = new Database(); // se creeaza conexiunea la baza de date
-        $res = mysqli_query($database->getConnection(), $sql);
+        $instance = Database::getInstance();
+        $conn = $instance->getConnection();// se creeaza conexiunea la baza de date
+        $res = mysqli_query($conn, $sql);
         $rowCount = mysqli_num_rows($res);
         if ($rowCount == 1) {
             $row = mysqli_fetch_assoc($res);
@@ -83,8 +85,9 @@ class USER
     public function read()
     {
         $sql = "SELECT * FROM  users ORDER BY id DESC";
-        $database = new Database(); // se creeaza conexiunea la baza de date
-        $res = mysqli_query($database->getConnection(), $sql);
+        $instance = Database::getInstance();
+        $conn = $instance->getConnection();// se creeaza conexiunea la baza de date
+        $res = mysqli_query($conn, $sql);
         return $res;
     }
     /**

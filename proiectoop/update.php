@@ -26,13 +26,13 @@ if(User::is_loggedin() !== true)
     $carte ->setPret($_POST['pret']);
     $carte ->setNrPagini($_POST['pagini']);
     $carte ->setTipCarte($_POST['tip_carte']);
-    if(isset($_FILES["poza"]) && !empty($_FILES["poza"])){
+    if(isset($_FILES["poza"]) && !empty($_FILES["poza"] &&$_FILES["poza"]['size']>0)){
         $carte->setPoza($_FILES["poza"]);
     }
 	$res = $carte->update($id);
 	if($res){
 	 	echo "Datele au fost actualizate cu succes!";
-		header("Location: <?php echo $base;?>afisare_carti.php");
+		header("Location:  {$base}afisare_carti.php");
 	}else{
 	 	echo "failed to update data";
 	}
@@ -49,7 +49,7 @@ if(User::is_loggedin() !== true)
         <div class="card bg-light">
             <article class="card-body mx-auto" style="max-width: 600px;">
                 <h4 class="card-title mt-3 text-center">Editeaza carte</h4>
-                <form  method="post" enctype="multipart/form-data"> 
+                <form  action ="<?php echo $base;?>update.php?id= <?php echo $id;?>" method="post" enctype="multipart/form-data"> 
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"> <i class="fa fa-address-card"></i> </span>

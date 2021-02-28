@@ -98,8 +98,9 @@
                '$this->titlu', '$this->autor','$this->editura', '$this->tip_carte', '$this->an_aparitie', 
                '$this->nr_pagini','$this->pret','$this->poza')";
           
-          $database = new Database();// se creeaza conexiunea la baza de date
-          $res = mysqli_query($database->getConnection(), $sql);
+          $instance = Database::getInstance();
+          $conn = $instance->getConnection();// se creeaza conexiunea la baza de date
+          $res = mysqli_query($conn, $sql);
 		if($res){
 	 		return true;
 		}else{
@@ -116,8 +117,9 @@
                $sql .= " ORDER BY id DESC";
           }
           
-          $database = new Database();// se creeaza conexiunea la baza de date
-          $res = mysqli_query($database->getConnection(), $sql);
+          $instance = Database::getInstance();
+          $conn = $instance->getConnection();// se creeaza conexiunea la baza de date
+          $res = mysqli_query($conn, $sql);
           return $res;
      }
      public function update($id){
@@ -131,8 +133,9 @@
                pret='$this->pret' ,
                poza ='$this->poza' 
                WHERE id=$id";
-          $database = new Database();// se creeaza conexiunea la baza de date
-          $res = mysqli_query($database->getConnection(), $sql);
+          $instance = Database::getInstance();
+          $conn = $instance->getConnection();// se creeaza conexiunea la baza de date
+          $res = mysqli_query($conn, $sql);
           if($res){
                return true;
           }else{
@@ -144,8 +147,9 @@
           $this->deletePoza($id);
 
 		$sql = "DELETE FROM " . self::TABLENAME . " WHERE id=$id";
-          $database = new Database();// se creeaza conexiunea la baza de date
-          $res = mysqli_query($database->getConnection(), $sql);
+          $instance = Database::getInstance();
+          $conn = $instance->getConnection();// se creeaza conexiunea la baza de date
+          $res = mysqli_query($conn, $sql);
  		if($res){
                 
  			return true;
@@ -156,8 +160,10 @@
      private function deletePoza($id){
 
           $sql = "SELECT poza FROM " . self::TABLENAME . " WHERE id=$id LIMIT 1";
-          $database = new Database();// se creeaza conexiunea la baza de date
-          $result = mysqli_query($database->getConnection(), $sql);
+          $instance = Database::getInstance();
+          $conn = $instance->getConnection();// se creeaza conexiunea la baza de date
+          $result = mysqli_query($conn, $sql);
+          
           $row = mysqli_fetch_assoc($result);
           $poza = $row['poza'];
           unlink("assets/images/$poza");

@@ -40,3 +40,6 @@
 
 - https://github.com/payloadbox/xss-payload-list
 - https://owasp.org/www-project-top-ten/
+
+
+- https://speckyboy.com/free-web-based-tools-for-web-designers/
